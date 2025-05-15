@@ -1,0 +1,125 @@
+/* Reset y tipografía básica */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Cabeceras */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Botones generales */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #3498db;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #95a5a6;
+  color: #fff;
+}
+.btn-edit {
+  background-color: #f1c40f;
+  color: #fff;
+}
+.btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Lista de productos */
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ececec;
+}
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.product-table th,
+.product-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 8px;
+  text-align: left;
+}
+.product-table th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.product-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
